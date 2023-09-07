@@ -74,7 +74,7 @@ const userData = {
     },
   ],
   resumeUrl:
-    "https://drive.google.com/file/d/1xmE3BOmgM7TAOOgVp36xQIQvYDntDYoo/view?usp=sharing",
+    "https://drive.google.com/file/d/1PmqauzETcuXu8EX9K241Nd2STg2T9B0P/view?usp=sharing",
   socialLinks: {
     linkedin: "https://www.linkedin.com/in/patrick-pospisil/",
     github: "https://github.com/PBPospisil",
