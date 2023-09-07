@@ -33,20 +33,20 @@ export default function FavouriteProjects() {
         </header>
 
         {/* Grid starts here */}
-        <div className="grid md:grid-cols-3 gap-8 lg:-mt-8 pb-40">
+        <div className="grid md:grid-cols-5 gap-8 lg:-mt-8 pb-40">
           {/* Single card */}
           <a
-            href="https://tailwindmasterkit.com"
-            className="w-full block col-span-3 shadow-2xl"
+            href="https://github.com/PBPospisil/simple-tts"
+            className="w-full block col-start-2 col-span-3 shadow-2xl"
           >
             <div className="relative overflow-hidden">
               <img
-                src="/tmk.jpg"
+                src="/stts.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Tailwind Master Kit
+                Simple Text to Speech
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 01
@@ -55,41 +55,20 @@ export default function FavouriteProjects() {
           </a>
           {/* Single card */}
           <a
-            href="https://placeholdertech.in"
-            className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
+            href="https://github.com/PBPospisil/phoenix"
+            className="w-full block col-start-2 col-span-3 shadow-2xl"
           >
             <div className="relative overflow-hidden">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
               <img
-                src="/placeholdertech.png"
+                src="/pdf-reader-feature-graphic.png"
                 alt="portfolio"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
                 PlaceholderTech
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+              <h1 className="absolute bottom-10 left-10 text-black-50 font-bold text-xl">
                 02
-              </h1>
-            </div>
-          </a>
-          {/* Single card */}
-          <a
-            href="https://manuarora.in"
-            className="w-full block col-span-3 sm:col-span-1  object-cover"
-          >
-            <div className="relative overflow-hidden shadow-2xl">
-              {/* <div className="overlay absolute inset-0 bg-black bg-opacity-70 z-10"></div> */}
-              <img
-                src="/portfolio.png"
-                alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
-              />
-              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Portfolio
-              </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
-                03
               </h1>
             </div>
           </a>
