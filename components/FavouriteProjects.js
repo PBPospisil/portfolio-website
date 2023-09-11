@@ -6,7 +6,7 @@ export default function FavouriteProjects() {
     <div className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900">
       <div className="max-w-6xl mx-auto">
         <header className="flex flex-col md:flex-row justify-between items-center pt-40 mx-10 md:my-20 lg:my-0">
-          <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-0 md:text-white dark:text-gray-600 text-center">
+          <h1 className="text-6xl lg:text-9xl max-w-lg font-bold text-gray-500 my-20 md:my-8 md:text-white dark:text-gray-600 text-center">
             Favourite Projects
           </h1>
           <Link
@@ -33,22 +33,22 @@ export default function FavouriteProjects() {
         </header>
 
         {/* Grid starts here */}
-        <div className="grid md:grid-cols-5 gap-8 lg:-mt-8 pb-40">
+        <div className="flex-col gap-8 pb-40 mx-8">
           {/* Single card */}
           <a
             href="https://github.com/PBPospisil/simple-tts"
-            className="w-full block col-start-2 col-span-3 shadow-2xl"
+            className="justify-self-center shadow-2xl"
           >
-            <div className="relative overflow-hidden">
+            <div className="relative mb-8">
               <img
                 src="/stts.png"
                 alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
+                className="transform hover:scale-110 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
                 Simple Text to Speech
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
+              <h1 className="absolute bottom-6 left-6 text-gray-50 font-bold text-xl">
                 01
               </h1>
             </div>
@@ -56,18 +56,18 @@ export default function FavouriteProjects() {
           {/* Single card */}
           <a
             href="https://github.com/PBPospisil/phoenix"
-            className="w-full block col-start-2 col-span-3 shadow-2xl"
+            className="justify-self-center shadow-2xl"
           >
-            <div className="relative overflow-hidden">
+            <div className="relative">
               <img
                 src="/pdf-reader-feature-graphic.png"
                 alt="portfolio"
-                className="transform hover:scale-125 transition duration-2000 ease-out"
+                className="transform hover:scale-110 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
                 PDF Reader
               </h1>
-              <h1 className="absolute bottom-10 left-10 text-black-50 font-bold text-xl">
+              <h1 className="absolute bottom-6 left-6 text-black-50 font-bold text-xl">
                 02
               </h1>
             </div>
