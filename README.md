@@ -1,17 +1,6 @@
-## Portfolio Website For Developers 💯
+# Portfolio Website
 
-**UPDATE:**
-
-
-1. Wrote a detailed blog on [freeCodeCamp](https://www.freecodecamp.org/news/how-to-build-a-portfolio-site-with-nextjs-tailwindcss/), describing and explaining how I built this application from the ground up.
-
-2. Included the `constants` folder, where you can directly add your details and it'll get reflected throughout the application. No more customizations for the template required, just add your data and it'll reflect immediately.
-
-Portfolio for developers is a simple and minimalistic website to showcase your skills and projects as a developer. The design is inspired by [Kevin Clark](https://kevinclark.ca). The website is completely Open Source, you can use it for whatever purpose you want.
-
-![HomeGif](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/websitegif.gif)
-
-# Features
+## Features
 
 - Responsive layout, works well on both Mobile and Desktop
 - Dark mode support. Click buttons to toggle dark mode and light mode.
@@ -19,58 +8,34 @@ Portfolio for developers is a simple and minimalistic website to showcase your s
 - Exact sections that a developer needs to showcase their skills.
 - Clear call to actions.
 
-# Pages
+## Pages
 
-I've kept the pages as simple as possible. Only the required sections are included with minimal content.
+# Landing
 
-## Landing
+![landing-page](https://github.com/PBPospisil/portfolio-website/assets/21959159/bf9294aa-685a-428a-92b5-fd03e860a369)
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/home.png)
+# About
 
-## About
+![about-me-page](https://github.com/PBPospisil/portfolio-website/assets/21959159/25430f01-4195-48bd-b8c7-f09d8e13cf83)
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/about.png)
+# Projects
 
-## Projects
+![projects-page](https://github.com/PBPospisil/portfolio-website/assets/21959159/84d1688d-141f-4dda-b73b-319adee4dc76)
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/projects.png)
+# Experience
 
-## Experience
+![experience-page](https://github.com/PBPospisil/portfolio-website/assets/21959159/3b0b0569-ea48-485b-b503-5957c8e9c065)
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/experience.png)
+# Contact
 
-## Contact
+![contact-page](https://github.com/PBPospisil/portfolio-website/assets/21959159/ee3711a8-87b2-4ee3-9ef4-1116bad6fd25)
 
-![Hompage](https://github.com/manuarora700/simple-developer-portfolio-website/blob/main/demo-images/contact.png)
-
-# Tech Stack
-
-The website is built in my favourite Tech Stack and deployed on [Vercel](https://vercel.com)
+## Tech Stack
 
 - [Next.js](https://nextjs.org) for building React Components.
 - [tailwindcss](https://tailwindcss.com) for styling.
 - [React Rough Notation](https://roughnotation.com) for Hero section highlighting.
 - [Vercel](https://vercel.com) for deployments and CI/CD.
 
-# Usage
-
-- Clone the repository using `git clone https://github.com/manuarora700/simple-developer-portfolio-website.git`
-- Install all the modules by using `npm i` or `npm install` or `yarn`
-- Run the local development server by using `npm run dev` or `yarn dev`
-- Make the required edits and deploy to YOUR GitHub repo for CI/CD.
-
-# Deployment
-
-Deployment can be done in 3 easy steps.
-
-- Login to [Vercel](https://vercel.com) or signup for an account if you don't have one.
-- Create a `New Project` and select YOUR GitHub repository of the portfolio project.
-- Wait for Vercel to deploy your project to production.
-
-# License
-
-This template is completely open source and free to use. Use it for client projects or your own portfolio project. Give me credits at the footer (If you wish, it'll help me a lot :)).
-
-# Support
-
-<a href="https://www.buymeacoffee.com/manuarora" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
+### Credits
+Website template developed by Manu Arora 💯
