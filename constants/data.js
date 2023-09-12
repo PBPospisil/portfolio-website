@@ -14,7 +14,7 @@ const userData = {
     },
     {
       title: "PDF Reader App",
-      link: "https://github.com/PBPospisil/phoenix",
+      link: "https://github.com/PBPospisil/pdf-reader",
       imgUrl: "/pdf-reader-feature-graphic.png",
     },
   ],
@@ -27,7 +27,7 @@ const userData = {
       `Having several years of hands-on software development experience — including in a leadership role — I've picked up software development fundamentals and soft-skills needed for collaboration in fast-paced environments and in teams with an aim for innovation.`,
     ],
     currentProject: "PDF Reader",
-    currentProjectUrl: "https://github.com/PBPospisil/phoenix",
+    currentProjectUrl: "https://github.com/PBPospisil/pdf-reader",
   },
   experience: [
     {

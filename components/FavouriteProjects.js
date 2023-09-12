@@ -55,7 +55,7 @@ export default function FavouriteProjects() {
           </a>
           {/* Single card */}
           <a
-            href="https://github.com/PBPospisil/phoenix"
+            href="https://github.com/PBPospisil/pdf-reader"
             className="justify-self-center shadow-2xl"
           >
             <div className="relative">
