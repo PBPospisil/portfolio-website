@@ -1,7 +1,43 @@
-import React from "react";
+import React, { useState} from "react";
 import userData from "@constants/data";
 
 export default function Contact() {
+
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log('sending')
+
+    let data = {
+      name,
+      email,
+      message
+    }
+
+    fetch('api/contact', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(data)
+    })
+    .then((res) => {
+      console.log('response received')
+      if(res.status == 200) {
+        console.log('Response succeeded!')
+        setSubmitted(true)
+        setName('')
+        setEmail('')
+        setBody('')
+      }
+    })
+  }
+
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -142,41 +178,38 @@ export default function Contact() {
             </div>
           </div>
           <form className="form rounded-lg bg-white p-4 flex flex-col">
-            <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              {" "}
-              Your Name
-            </label>
+            <label 
+              htmlFor="name" 
+              className="text-sm text-gray-600 mx-4">Your Name</label>
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
+              onChange={e => {setName(e.target.value)}}
             />
-            <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
-              Email
-            </label>
+            <label 
+              htmlFor="email" 
+              className="text-sm text-gray-600 mx-4 mt-4">Email</label>
             <input
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
+              onChange={e => {setEmail(e.target.value)}}
             />
             <label
               htmlFor="message"
-              className="text-sm text-gray-600 mx-4 mt-4"
-            >
-              Message
-            </label>
+              className="text-sm text-gray-600 mx-4 mt-4">Message</label>
             <textarea
               rows="4"
               type="text"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
+              onChange={e => {setMessage(e.target.value)}}
             ></textarea>
             <button
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
-            >
-              Send Message
-            </button>
+              onClick={e => handleSubmit(e)}>Send Message</button>
           </form>
         </div>
       </div>
