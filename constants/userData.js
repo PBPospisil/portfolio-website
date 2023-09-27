@@ -4,6 +4,7 @@ const userData = {
   designation: "Software Developer",
   avatarUrl: "/avatar.jpeg",
   email: "patpospisil@gmail.com",
+  bot_email: "pbpbot.no.reply@gmail.com",
   phone: "+1 7809745149",
   address: "Calgary, Alberta, Canada.",
   projects: [

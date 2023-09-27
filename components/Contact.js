@@ -1,16 +1,14 @@
 import React, { useState} from "react";
-import userData from "@constants/data";
+import userData from "@constants/userData";
 
 export default function Contact() {
 
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [submitted, setSubmitted] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    console.log('sending')
 
     let data = {
       name,
@@ -18,7 +16,7 @@ export default function Contact() {
       message
     }
 
-    fetch('api/contact', {
+    await fetch('api/contact', {
       method: 'POST',
       headers: {
         'Accept': 'application/json, text/plain, */*',
@@ -27,14 +25,14 @@ export default function Contact() {
       body: JSON.stringify(data)
     })
     .then((res) => {
-      console.log('response received')
-      if(res.status == 200) {
-        console.log('Response succeeded!')
-        setSubmitted(true)
+      if(res.status == 200 || res.status == 250) {
         setName('')
         setEmail('')
-        setBody('')
+        setMessage('')
       }
+    })
+    .catch((err) => {
+      console.log(err)
     })
   }
 
@@ -186,6 +184,7 @@ export default function Contact() {
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
               onChange={e => {setName(e.target.value)}}
+              value={name}
             />
             <label 
               htmlFor="email" 
@@ -195,6 +194,7 @@ export default function Contact() {
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
               onChange={e => {setEmail(e.target.value)}}
+              value={email}
             />
             <label
               htmlFor="message"
@@ -205,6 +205,7 @@ export default function Contact() {
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
               onChange={e => {setMessage(e.target.value)}}
+              value={message}
             ></textarea>
             <button
               type="submit"
